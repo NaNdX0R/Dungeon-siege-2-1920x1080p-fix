@@ -1,0 +1,2518 @@
+[system_detail]
+{
+	[8M32B]
+	{
+		detail			= 0;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 1; }
+			[800x600]	{ max_back_buffers = 1; }
+		}
+	}
+	[8M16B]
+	{
+		detail			= 1;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 1; }
+			[800x600]	{ max_back_buffers = 1; }
+		}
+	}
+	[12M32B]
+	{
+		detail			= 2;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 1; }
+			[1024x768]	{ max_back_buffers = 1; }
+		}
+	}
+	[12M16B]
+	{
+		detail			= 3;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 1; }
+		}
+	}
+	[16M32B]
+	{
+		detail			= 2;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 1; }
+		}
+	}
+	[16M16B]
+	{
+		detail			= 3;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+		}
+	}
+	[32M32B]
+	{
+		detail			= 2;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+		}
+	}
+	[32M16B]
+	{
+		detail			= 4;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+		}
+	}
+	[64M32B]
+	{
+		detail			= 4;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+		}
+	}
+	[64M16B]
+	{
+		detail			= 5;
+		shadow_tex_size	= 64;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+		}
+	}
+}
+
+
+[default_settings]
+{
+	[0mhz-300mhz]
+	{
+		lodfi					= 0.2f;
+		no_complex_shadows		= true;
+		trilinear_filt			= false;
+	}
+	[301mhz-400mhz]
+	{
+		lodfi					= 0.4f;
+		no_complex_shadows		= true;
+		trilinear_filt			= false;
+	}
+	[401mhz-500mhz]
+	{
+		lodfi					= 0.6f;
+		no_complex_shadows		= true;
+		trilinear_filt			= false;
+	}
+}
+		
+
+[video_capabilities]
+{
+	[vendor*]
+	{
+		vendor						= "3Dfx";
+
+		b no_color_control			= false;
+		b simple_render				= false;
+		b no_complex_shadows		= false;
+		b no_flip					= false;
+		b below_min_spec			= false;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "Rush (Alliance)";
+			x vendorid				= 0x1142;
+			x deviceid				= 0x643d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= true;
+			b below_min_spec		= true;
+			b only_16_bit			= true;
+		}
+		[device*]
+		{
+			name					= "Rush (Macronix)";
+			x vendorid				= 0x10d9;
+			x deviceid				= 0x8626;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= true;
+			b below_min_spec		= true;
+			b only_16_bit			= true;
+		}
+		[device*]
+		{
+			name					= "Voodoo 1";
+			x vendorid				= 0x121a;
+			x deviceid				= 0x0001;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= true;
+			b below_min_spec		= true;
+			b only_16_bit			= true;
+		}
+		[device*]
+		{
+			name					= "Voodoo 2";
+			x vendorid				= 0x121a;
+			x deviceid				= 0x0002;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b only_16_bit			= true;
+		}
+		[device*]
+		{
+			name					= "Banshee";
+			x vendorid				= 0x121a;
+			x deviceid				= 0x0003;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b only_16_bit			= true;
+		}
+		[device*]
+		{
+			name					= "Voodoo 3";
+			x vendorid				= 0x121a;
+			x deviceid				= 0x0005;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b only_16_bit			= true;
+			b simple_render			= true;
+		}
+		[device*]
+		{
+			name					= "Voodoo 5";
+			x vendorid				= 0x121a;
+			x deviceid				= 0x0009;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "ST";
+
+		b no_color_control			= false;
+		b simple_render				= false;
+		b no_complex_shadows		= false;
+		b no_flip					= false;
+		b below_min_spec			= false;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= true;
+		b shadow_render_target		= true;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= true;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "Kyro";
+			x vendorid				= 0x104a;
+			x deviceid				= 0x0010;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "ATI";
+		
+		b no_color_control			= false;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= false;
+		b below_min_spec			= true;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+		
+		[device*]
+		{
+			name					= "Mach 64";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4354;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Mach 64";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4358;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Mach 64";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4758;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage LT";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c47;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage II";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4754;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage II+";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4755;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage IIC PCI";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4756;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage IIC PCI";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5654;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage IIC PCI";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5655;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage IIC PCI";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5656;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage IIC AGP";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4757;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage IIC AGP";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4759;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage IIC AGP";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x475a;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage LT-Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c42;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage LT-Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c49;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage LT-Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c50;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4742;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_flip				= true;
+		}
+		[device*]
+		{
+			name					= "Rage Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4744;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_flip				= true;
+		}
+		[device*]
+		{
+			name					= "Rage Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4749;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_flip				= true;
+		}
+		[device*]
+		{
+			name					= "Rage Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4750;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_flip				= true;
+		}
+		[device*]
+		{
+			name					= "Rage XC";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x474c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage XC";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x474e;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage Mobility";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c4d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage Mobility";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c52;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage XL";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x474d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage XL";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x474f;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage XL";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4752;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Rage 128 VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x524b;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x524c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 GL";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5245;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 GL";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5246;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 4X";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5345;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 4X";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5346;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 4X";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5347;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 4X";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5348;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 4X";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x534b;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 4X";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x534c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 4X";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x534d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 4X";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x534e;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5047;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5048;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5049;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x504a;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x504b;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x504c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x504d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x504e;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x504f;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5050;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5051;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5052;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5053;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5054;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5055;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5056;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5057;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro VR";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5058;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage Mobility 128 M3";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c45;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage Mobility 128 M3";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c46;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5041;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5042;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5043;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5044;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5045;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage Fury";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5046;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage Mobility 128 M4";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4d46;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage Mobility 128 M4";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4d4c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro Ultra";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5446;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro Ultra";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x544c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro Ultra";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5452;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro Ultra";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5453;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro Ultra";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5454;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Rage 128 Pro Ultra";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5455;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "Radeon VE";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5159;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon VE";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x515a;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5144;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5145;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5146;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5147;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon Mobility";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c57;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon Mobility";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c58;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon Mobility";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4c59;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon 7500";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x5157;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon 8500";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x514c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon 8500";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x514e;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon 8500";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x514f;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Radeon 8500 DV";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4242;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "R300";
+			x vendorid				= 0x1002;
+			x deviceid				= 0x4e44;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b tex_state_reset		= false;
+			b shadow_render_target	= true;
+			b buffers_frames		= true;
+			b no_flip				= true;
+		}
+	}
+	
+	[vendor*]
+	{
+		vendor						= "STB";
+
+		b no_color_control			= false;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= false;
+		b below_min_spec			= true;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "VideoRage";
+			x vendorid				= 0x109e;
+			x deviceid				= 0x2164;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+	}
+			
+	[vendor*]
+	{
+		vendor						= "3DLabs";
+
+		b no_color_control			= true;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= true;
+		b below_min_spec			= true;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "Permedia 2";
+			x vendorid				= 0x104c;
+			x deviceid				= 0x3d04;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Permedia 2";
+			x vendorid				= 0x104c;
+			x deviceid				= 0x3d07;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Permedia 2";
+			x vendorid				= 0x10ba;
+			x deviceid				= 0x0301;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_flip				= false;
+		}
+		[device*]
+		{
+			name					= "GLiNT";
+			x vendorid				= 0x3d3d;
+			x deviceid				= 0x0002;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+			b no_flip				= false;
+		}
+		[device*]
+		{
+			name					= "GLiNT";
+			x vendorid				= 0x3d3d;
+			x deviceid				= 0x0003;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+			b no_flip				= false;
+		}
+		[device*]
+		{
+			name					= "GLiNT";
+			x vendorid				= 0x3d3d;
+			x deviceid				= 0x0006;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+			b no_flip				= false;
+		}
+		[device*]
+		{
+			name					= "GLiNT";
+			x vendorid				= 0x1048;
+			x deviceid				= 0x8901;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+			b no_flip				= false;
+		}
+		[device*]
+		{
+			name					= "Permedia 2";
+			x vendorid				= 0x3d3d;
+			x deviceid				= 0x0009;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_flip				= false;
+		}
+		[device*]
+		{
+			name					= "Permedia 3";
+			x vendorid				= 0x3d3d;
+			x deviceid				= 0x000a;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b no_flip				= false;
+			b below_min_spec		= false;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "Rendition";
+
+		b no_color_control			= false;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= false;
+		b below_min_spec			= true;
+		b only_16_bit				= true;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "Verite 1000";
+			x vendorid				= 0x1163;
+			x deviceid				= 0x0001;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Verite 2100";
+			x vendorid				= 0x1163;
+			x deviceid				= 0x2000;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "S3";
+
+		b no_color_control			= false;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= false;
+		b below_min_spec			= true;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= true;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "Virge";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x5631;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b only_16_bit			= true;
+		}
+		[device*]
+		{
+			name					= "Trio64VX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8811;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Trio64VX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8812;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge VX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x883d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8880;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x88c0;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x88c1;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x88d0;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x88d1;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x88f0;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Trio64DX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8901;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Trio 3D";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8904;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{	
+			name					= "Virge DX/GX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a01;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge GX2";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a10;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Trio3D";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a13;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge MX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c00;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge MX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c01;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge MXC";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c02;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Virge MX + Macrovision";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c03;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Savage 3D";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a20;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+			b full_tex_restore		= true;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Savage 3D S3";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a21;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+			b full_tex_restore		= true;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Savage 3D S4";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a22;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "Savage 3D S4";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a23;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "Savage4 ProSavage";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a25;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "ProSavage";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8a26;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "Savage MX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c10;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "Savage IX w/MV";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c12;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "SuperSavage 128/MX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c22;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "SuperSavage 128/IX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c2a;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "SuperSavage 128/IX DDR";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c2b;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "SuperSavage/IX";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c2c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "SuperSavage/IX DDR";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c2d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "SuperSavage/IXC SDR";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c2e;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "SuperSavage/IXC DDR";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x8c2f;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b full_tex_restore		= true;
+		}
+		[device*]
+		{
+			name					= "Savage 2000";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x9102;
+			x driver_product		= 0x0004000b;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= false;
+			b no_flip				= true;
+			b below_min_spec		= false;
+			b full_tex_restore		= true;
+			b trilinear_filt		= true;
+			b scene_fade			= false;
+		}
+		[device*]
+		{
+			name					= "Savage 2000";
+			x vendorid				= 0x5333;
+			x deviceid				= 0x9102;
+			x driver_product		= 0x0004000c;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b no_flip				= true;
+			b below_min_spec		= false;
+			b full_tex_restore		= true;
+			b trilinear_filt		= true;
+			b scene_fade			= false;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "Matrox";
+
+		b no_color_control			= false;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= true;
+		b below_min_spec			= true;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= true;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "G100 PCI";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x1000;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "G100 AGP";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x1001;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Millennium";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x0518;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Millennium";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x0519;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Mystique";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x051a;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Mystique";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x0d10;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Millennium II PCI";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x051b;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Millennium II AGP";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x051f;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "G200 PCI";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x0520;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "G200 AGP";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x0521;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b below_min_spec		= false;
+		}
+		[device*]
+		{
+			name					= "G400";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x0525;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Fusion G450";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x1525;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Fusion G800";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x1527;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Mistral";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x2007;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "G800";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x2527;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Parhelia";
+			x vendorid				= 0x102b;
+			x deviceid				= 0x0527;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "nVidia";
+
+		b no_color_control			= false;
+		b simple_render				= false;
+		b no_complex_shadows		= false;
+		b no_flip					= true;
+		b below_min_spec			= false;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= true;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "Riva 128";
+			x vendorid				= 0x10b4;
+			x deviceid				= 0x1b1d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= true;
+			b below_min_spec		= true;
+		}
+		[device*]
+		{
+			name					= "Riva 128";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x0018;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= true;
+			b below_min_spec		= true;
+		}
+		[device*]
+		{
+			name					= "Riva 128";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0018;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= true;
+			b below_min_spec		= true;
+		}
+		[device*]
+		{
+			name					= "Riva 128";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x0019;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= true;
+			b below_min_spec		= true;
+		}
+		[device*]
+		{
+			name					= "Riva 128";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0019;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= true;
+			b no_complex_shadows	= true;
+			b below_min_spec		= true;
+		}
+		[device*]
+		{
+			name					= "TNT";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x0020;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0020;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x0028;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0028;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2 Ultra";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x0029;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2 Ultra";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0029;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x002a;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x002a;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x002b;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x002b;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT Vanta";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x002c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT Vanta";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x002c;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2 Model 64";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x002d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT2 Model 64";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x002d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT Vanta";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x002e;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT Vanta";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x002e;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT Vanta";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x002f;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "TNT Vanta";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x002f;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Aladdin TNT2";
+			x vendorid				= 0x12d2;
+			x deviceid				= 0x00a0;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Aladdin TNT2";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x00a0;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "GeForce";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0100;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce DDR";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0101;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce Ultra";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0102;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Quadro";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0103;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce2 MX";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0110;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce2 MX";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0111;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce2 GO";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0112;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Quadro2 MXR";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0113;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce2";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0150;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce2";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0151;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce2 Ultra";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0152;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Quadro2 Pro";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0153;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4 MX";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0170;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4 MX";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0171;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4 MX";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0172;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4 Go";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0174;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4 Go";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0175;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4 Go";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0176;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4 Go";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0179;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "Crush11";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x01a0;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+		}
+		[device*]
+		{
+			name					= "GeForce3";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0200;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "GeForce3";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0201;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "GeForce3 Ultra";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0202;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "Quadro DCC";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0203;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "GeForce3 Integrated";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x02a0;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0250;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0251;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+		[device*]
+		{
+			name					= "GeForce4";
+			x vendorid				= 0x10de;
+			x deviceid				= 0x0253;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b trilinear_filt		= true;
+			b shadow_render_target	= true;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "Intel";
+
+		b no_color_control			= true;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= false;
+		b below_min_spec			= false;
+		b only_16_bit				= true;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= true;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "i740";
+			x vendorid				= 0x8086;
+			x deviceid				= 0x7800;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "i752";
+			x vendorid				= 0x8086;
+			x deviceid				= 0x1240;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "i810";
+			x vendorid				= 0x8086;
+			x deviceid				= 0x7121;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+		}
+		[device*]
+		{
+			name					= "i810";
+			x vendorid				= 0x8086;
+			x deviceid				= 0x7123;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+		}
+		[device*]
+		{
+			name					= "i810e";
+			x vendorid				= 0x8086;
+			x deviceid				= 0x7125;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+		}
+		[device*]
+		{
+			name					= "i815";
+			x vendorid				= 0x8086;
+			x deviceid				= 0x1132;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b no_color_control		= false;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "VideoLogic";
+
+		b no_color_control			= false;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= false;
+		b below_min_spec			= true;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= true;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= true;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "PowerVR";
+			x vendorid				= 0x1033;
+			x deviceid				= 0x0046;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "PowerVR2";
+			x vendorid				= 0x1033;
+			x deviceid				= 0x0067;
+			x driver_product		= 0;
+			x driver_version		= 0;
+			b simple_render			= false;
+			b no_complex_shadows	= false;
+			b below_min_spec		= false;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "Trident";
+
+		b no_color_control			= false;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= false;
+		b below_min_spec			= false;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "3D Image";
+			x vendorid				= 0x1023;
+			x deviceid				= 0x9850;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "Blade 3D";
+			x vendorid				= 0x1023;
+			x deviceid				= 0x9880;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+		[device*]
+		{
+			name					= "CyberBlade XP";
+			x vendorid				= 0x1023;
+			x deviceid				= 0x9910;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "Number Nine";
+
+		b no_color_control			= false;
+		b simple_render				= true;
+		b no_complex_shadows		= true;
+		b no_flip					= false;
+		b below_min_spec			= false;
+		b only_16_bit				= false;
+		b full_tex_restore			= false;
+		b trilinear_filt			= false;
+		b shadow_render_target		= false;
+		b buffers_frames			= false;
+		b scene_fade				= true;
+		b tex_state_reset			= false;
+		b manual_mouse_copy			= false;
+		b modulate_only				= false;
+
+		[device*]
+		{
+			name					= "Revolution 3D";
+			x vendorid				= 0x105d;
+			x deviceid				= 0x493d;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+
+		[device*]
+		{
+			name					= "Revolution IV";
+			x vendorid				= 0x105d;
+			x deviceid				= 0x5348;
+			x driver_product		= 0;
+			x driver_version		= 0;
+		}
+	}
+}
