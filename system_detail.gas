@@ -1,0 +1,547 @@
+[system_detail]
+{
+	[32M32B]
+	{
+		detail			= 2;
+		shadow_tex_size	= 128;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+			[1280x1024]	{ max_back_buffers = 2; }
+			[1920x1080]	{ max_back_buffers = 2; }
+		}
+	}
+	[32M16B]
+	{
+		detail			= 4;
+		shadow_tex_size	= 128;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+			[1280x1024]	{ max_back_buffers = 2; }
+			[1920x1080]	{ max_back_buffers = 2; }
+		}
+	}
+	[64M32B]
+	{
+		detail			= 4;
+		shadow_tex_size	= 256;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+			[1280x1024]	{ max_back_buffers = 2; }
+			[1600x1200] { max_back_buffers = 2; }
+			[1920x1080] { max_back_buffers = 2; }
+		}
+	}
+	[64M16B]
+	{
+		detail			= 5;
+		shadow_tex_size	= 256;
+		[resolutions]
+		{
+			[640x480]	{ max_back_buffers = 2; }
+			[800x600]	{ max_back_buffers = 2; }
+			[1024x768]	{ max_back_buffers = 2; }
+			[1280x1024]	{ max_back_buffers = 2; }
+			[1600x1200] { max_back_buffers = 2; }
+			[1920x1080] { max_back_buffers = 2; }
+		}
+	}
+}
+
+
+[default_settings]
+{
+	[0mhz-500mhz]
+	{
+		lodfi					= 0.6f;
+		no_complex_shadows		= true;
+		trilinear_filt			= false;
+	}
+}
+
+
+[video_capabilities]
+{
+	// These are the default settings used when the game detects and unknown vendor
+	b simple_render					= true;
+	b shaders_on_default			= false;
+	b below_min_spec				= true;
+	b cpu_requirement				= false;
+	b shadows_on_default			= false;
+	b limit_texstages				= false;
+	b no_dest_alpha					= false;
+	b alt_clear_mode				= false;
+	b no_standard_shaders			= false;
+	b no_advanced_shaders			= false;
+	b swapeffect_discard			= true;
+		
+
+	[vendor*]
+	{
+		vendor						= "3Dfx";
+		vendor_ids					= 0x1142, 0x10d9, 0x121a;
+		
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+		
+
+		[device*]
+		{
+			name					= "Rush";
+			device_ids				= 0x643d, 0x8626;
+		}
+		[device*]
+		{
+			name					= "Voodoo series";
+			device_ids				= 0x0001, 0x0002, 0x0003, 0x0004, 0x0005, 0x0007, 0x0009;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "ST";
+		vendor_ids					= 0x104a;
+		
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "Kyro";
+			device_ids				= 0x0010;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "ATI";
+		vendor_ids					= 0x1002;
+		
+		b simple_render				= false;
+		b shaders_on_default		= true;
+		b below_min_spec			= false;
+		b cpu_requirement			= false;
+		b shadows_on_default		= true;
+		b swapeffect_discard		= false;
+		
+        [device*]
+        {
+            name					= "Radeon 5";
+			device_ids				= 0x9874;
+			b swapeffect_discard			= false;      
+        }
+
+		[device*]
+		{
+			name					= "Mach series";
+			device_ids				= 0x4158, 0x4354, 0x4358, 0x4554, 0x4654, 0x4758, 0x5354, 0x5654, 0x5655,
+									  0x5656;
+			b simple_render			= true;
+			b shaders_on_default	= false;
+			b below_min_spec		= true;
+			b shadows_on_default	= false;
+		}
+		[device*]
+		{
+			name					= "Rage series";
+			device_id				= 0x4742, 0x4744, 0x4747, 0x4749, 0x4750, 0x474c, 0x474d, 0x474e, 0x474f,
+									  0x4750, 0x4751, 0x4752, 0x4753, 0x4754, 0x4755, 0x4756, 0x4757, 0x4758,
+									  0x4759, 0x475a, 0x4c42, 0x4c44, 0x4c45, 0x4c46, 0x4c47, 0x4c49, 0x4c4d,
+									  0x4c4e, 0x4c50, 0x4c51, 0x4c52, 0x4c53, 0x4c54, 0x4c57, 0x4c58, 0x4d46,
+									  0x4d4c, 0x5041, 0x5042, 0x5043, 0x5044, 0x5045, 0x5046, 0x5047, 0x5048,
+									  0x5049, 0x504a, 0x504b, 0x504c, 0x504d, 0x504e, 0x504f, 0x5050, 0x5051,
+									  0x5052, 0x5053, 0x5054, 0x5055, 0x5056, 0x5057, 0x5058, 0x5245, 0x5246,
+									  0x5247, 0x524b, 0x524c, 0x5345, 0x5346, 0x5347, 0x5348, 0x534b, 0x534c,
+									  0x534d, 0x534e, 0x5446, 0x544c, 0x5452, 0x5453, 0x5454, 0x5455;
+			b simple_render			= true;
+			b shaders_on_default	= false;
+			b below_min_spec		= true;
+			b shadows_on_default	= false;
+		}
+		[device*]
+		{
+			name					= "Radeon VE/7000 series";
+			device_ids				= 0x5144, 0x5145, 0x5146, 0x5147, 0x5148, 0x4c57, 0x4c58, 0x4c59, 0x4c5a,
+									  0x4136, 0x4336, 0x4137, 0x4337, 0x4237, 0x4437, 0x5157, 0x5159, 0x515a,
+									  0x515e, 0x515f, 0x516c;
+			b shaders_on_default	= false;	
+			b cpu_requirement		= true;
+			b shadows_on_default	= false;
+		}	
+		[device*]
+		{
+			name					= "Radeon 7000/8000/9000 series";
+			device_ids				= 0x4242, 0x4966, 0x4967, 0x496e, 0x496f, 0x4c64, 0x4c66, 0x4c67, 0x4c6e,
+									  0x4c6f, 0x514c, 0x514d, 0x514e, 0x514f, 0x516d, 0x5834, 0x5835, 0x5940,
+									  0x5941, 0x5942, 0x5960, 0x5961, 0x5964, 0x5969, 0x5c41, 0x5c43, 0x5c61,
+									  0x5c63, 0x5d44, 0x7834, 0x7835;
+			b shaders_on_default	= false;
+		}
+		[device*]
+		{
+			name					= "Radeon 9600/9700/9800 series";
+			device_ids				= 0x4144, 0x4145, 0x4146, 0x4147, 0x4148, 0x4149, 0x4150, 0x4151, 0x4152,
+									  0x4153, 0x4154, 0x4155, 0x4164, 0x4166, 0x4167, 0x4168, 0x4169, 0x4170,
+									  0x4171, 0x4172, 0x4173, 0x4174, 0x4175, 0x4e44, 0x4e45, 0x4e46, 0x4e47,
+									  0x4e48, 0x4e49, 0x4e4a, 0x4e4b, 0x4a4e, 0x4e50, 0x4e51, 0x4e52, 0x4e54,
+									  0x4e56, 0x4e64, 0x4e65, 0x4e66, 0x4e67, 0x4e68, 0x4e69, 0x4e6a, 0x4e6b,
+									  0x4e71;
+		}
+		[device*]
+		{
+			name					= "Radeon X-Series";
+			device_ids				= 0x3150, 0x3152, 0x3154, 0x3e50, 0x3e54, 0x3e70, 0x3e74, 0x4a48, 0x4a49,
+									  0x4a4a, 0x4a4b, 0x4a4c, 0x4a4f, 0x4a50, 0x4a54, 0x4a68, 0x4a69, 0x4a6a,
+									  0x4a6b, 0x4a6c, 0x4a6f, 0x4a70, 0x4a74, 0x4a4d, 0x4a6d, 0x4b48, 0x4b49,
+									  0x4b4a, 0x4b4b, 0x4b4c, 0x4b68, 0x4b69, 0x4b6a, 0x4b6b, 0x4b6c, 0x526f,
+									  0x5272, 0x5460, 0x5462, 0x5464, 0x5548, 0x5549, 0x554a, 0x554b, 0x554d,
+									  0x554f, 0x5550, 0x5551, 0x5568, 0x5569, 0x556a, 0x556b, 0x556d, 0x556f,
+									  0x5570, 0x5571, 0x564a, 0x564b, 0x5652, 0x5653, 0x5854, 0x5874, 0x5875,
+									  0x5954, 0x5955, 0x5974, 0x5975, 0x5a41, 0x5a42, 0x5a43, 0x5a61, 0x5a62,
+									  0x5a63, 0x5a64, 0x5b60, 0x5b62, 0x5b64, 0x5b70, 0x5b72, 0x5b74, 0x5d48,
+									  0x5d49, 0x5d4a, 0x5d4d, 0x5d4f, 0x5d50, 0x5d51, 0x5d52, 0x5d57, 0x5d6d,
+									  0x5d70, 0x5d77, 0x5e48, 0x5e4a, 0x5e4b, 0x5e4c, 0x5e4d, 0x5e4f, 0x5e68,
+									  0x5e6a, 0x5e6b, 0x5e6c, 0x5e6d, 0x5e6f;
+		}					
+	}
+	
+	[vendor*]
+	{
+		vendor						= "STB";
+		vendor_ids					= 0x109e;
+		
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "VideoRage";
+			device_ids				= 0x2164;
+		}
+	}
+	
+	[vendor*]
+	{
+		vendor						= "SiS";
+		vendor_ids					= 0x1039;
+		
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "Integrated";
+			device_ids				= 0x0204, 0x0205, 0x0305, 0x6306, 0x6326, 0x6325, 0x0325, 0x0330;
+		}
+	}	
+			
+	[vendor*]
+	{
+		vendor						= "3DLabs";
+		vendor_ids					= 0x104c, 0x10ba, 0x3d3d, 0x1048;
+		
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "Permedia series";
+			device_ids				= 0x0004, 0x0005, 0x0007, 0x0009, 0x000a, 0x000b, 0x000c, 0x000d, 0x000e,
+									  0x3d04, 0x0100, 0x0301, 0x1004, 0x3d94, 0x3d07;
+		}
+		[device*]
+		{
+			name					= "GLiNT series";
+			device_ids				= 0x0001, 0x0002, 0x0003, 0x0006, 0x0008, 0x8901;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "Rendition";
+		vendor_ids					= 0x1163;
+
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "Verite series";
+			device_ids				= 0x0001, 0x2000;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "S3";
+		vendor_ids					= 0x5333;
+
+		b simple_render				= false;
+		b shaders_on_default		= false;
+		b below_min_spec			= false;
+		b cpu_requirement			= false;
+		b shadows_on_default		= true;	
+
+		[device*]
+		{
+			name					= "Virge series";
+			device_ids				= 0x5631, 0x8811, 0x8812, 0x8814, 0x8815, 0x883d, 0x8880, 0x88c0, 0x88c1,
+									  0x88d0, 0x88d1, 0x88f0, 0x8901, 0x8904, 0x8a01, 0x8a10, 0x8a13, 0x8c00,
+									  0x8c01, 0x8c02, 0x8c03;
+			b simple_render			= true;
+			b below_min_spec		= true;
+			b shadows_on_default	= false;
+		}
+		[device*]
+		{
+			name					= "Savage series";
+			device_ids				= 0x8a20, 0x8a21, 0x8a22, 0x8a23, 0x8a25, 0x8a26, 0x8c10, 0x8c12, 0x8c22,
+									  0x8c2a, 0x8c2b, 0x8c2c, 0x8c2d, 0x8c2e, 0x8c2f, 0x9102;
+			b simple_render			= true;
+			b below_min_spec		= true;
+			b shadows_on_default	= false;								  
+		}
+		[device*]
+		{
+			name					= "Twister series";
+			device_ids				= 0x8d01, 0x8d02, 0x8d03, 0x8d04;
+			b simple_render			= true;
+			b below_min_spec		= true;
+			b shadows_on_default	= false;		
+		}
+		[device*]
+		{
+			name					= "DeltaChrome series";
+			device_ids				= 0x8e00, 0x8e01, 0x8e02, 0x8e03, 0x8e04;
+			b alt_clear_mode		= true;
+		}			
+	}
+
+	[vendor*]
+	{
+		vendor						= "Matrox";
+		vendor_ids					= 0x102b;
+		
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+		b no_dest_alpha				= true;
+		
+		[device*]
+		{
+			name					= "Millenium/Mystique series";
+			device_ids				= 0x0518, 0x0519, 0x051a, 0x0d10, 0x051b, 0x051f;
+		}
+		[device*]
+		{
+			name					= "G series";
+			device_ids				= 0x1000, 0x1001, 0x0520, 0x0521, 0x0525, 0x1525, 0x1527, 0x2007, 0x2527,
+									  0x0527, 0x2537;
+		}		
+	}
+
+	[vendor*]
+	{
+		vendor						= "nVidia";
+		vendor_ids					= 0x10b4, 0x10de, 0x12d2;
+		
+		b simple_render				= false;
+		b shaders_on_default		= true;
+		b below_min_spec			= false;
+		b cpu_requirement			= false;
+		b shadows_on_default		= true;
+
+		[device*]
+		{
+			name					= "Riva/TNT series";
+			device_ids				= 0x1b1d, 0x0008, 0x0009, 0x0010, 0x0018, 0x0019, 0x0020, 0x0028, 0x0029,
+									  0x002a, 0x002b, 0x002c, 0x002d, 0x002e, 0x002f, 0x00a0;
+			b simple_render			= true;
+			b shaders_on_default	= false;
+			b below_min_spec		= true;
+			b shadows_on_default	= false;		 
+		}
+		[device*]
+		{
+			name					= "GeForce 1/2/3/4 series";
+			device_ids				= 0x0100, 0x0101, 0x0102, 0x0103, 0x0110, 0x0111, 0x0112, 0x0113, 0x01a0,
+									  0x0150, 0x0151, 0x0152, 0x0153, 0x0170, 0x0171, 0x0172, 0x0173, 0x0174,
+									  0x0175, 0x0176, 0x0177, 0x0178, 0x0179, 0x017a, 0x017b, 0x017c, 0x017d,
+									  0x0181, 0x0182, 0x0183, 0x0185, 0x0186, 0x0187, 0x0188, 0x018a, 0x018b,
+									  0x018c, 0x018d, 0x01f0, 0x0200, 0x0201, 0x0202, 0x0203, 0x02a0;
+			b shaders_on_default	= false;
+			b shadows_on_default	= false;								  
+			b swapeffect_discard	= false;
+		}
+		[device*]
+		{
+			name					= "GeForce 4 series";
+			device_ids				= 0x0250, 0x0251, 0x0252, 0x0253, 0x0258, 0x0259, 0x025b, 0x0280, 0x0281,
+									  0x0282, 0x0286, 0x0288, 0x0289, 0x028c;					  
+									  
+		}
+		[device*]
+		{
+			name					= "GeForce FX series";
+			device_ids				= 0x0300, 0x0301, 0x0302, 0x0308, 0x0309, 0x030a, 0x0311, 0x0312, 0x0313,
+									  0x0314, 0x0316, 0x0317, 0x0318, 0x0319, 0x031a, 0x031b, 0x031c, 0x031d,
+									  0x031e, 0x031f, 0x0320, 0x0321, 0x0322, 0x0323, 0x0324, 0x0325, 0x0326,
+									  0x0327, 0x0328, 0x0329, 0x032a, 0x032b, 0x032d, 0x032c, 0x032f, 0x0330,
+									  0x0331, 0x0332, 0x0333, 0x0334, 0x0338, 0x033f, 0x0341, 0x0342, 0x0343,
+									  0x0344, 0x0345, 0x0347, 0x0348, 0x0349, 0x034b, 0x034c, 0x034e, 0x034f;
+		}
+		[device*]
+		{
+			name					= "GeForce 6000 series";
+			device_ids				= 0x0040, 0x0041, 0x0042, 0x0043, 0x0045, 0x0049, 0x004e, 0x00c0, 0x00c1,
+									  0x00c2, 0x00c8, 0x00c9, 0x00cc, 0x00cd, 0x00ce, 0x0140, 0x0141, 0x0142,
+									  0x0143, 0x0144, 0x0145, 0x0147, 0x0148, 0x0149, 0x014b, 0x014c, 0x014d,
+									  0x014e, 0x014f, 0x0160, 0x0161, 0x0162, 0x0163, 0x0164, 0x0165, 0x0167,
+									  0x0169, 0x016b, 0x016c, 0x016d, 0x016e, 0x0211, 0x0212, 0x0215, 0x0220,
+									  0x0221, 0x0222, 0x0228, 0x00f0, 0x00f1, 0x00f2, 0x00f3, 0x00f8, 0x00f9,
+									  0x00fa, 0x00fb, 0x00fc, 0x00fd, 0x00fe, 0x00ff;
+		}				
+	}
+
+	[vendor*]
+	{
+		vendor						= "Intel";
+		vendor_ids					= 0x8086;
+		
+		b simple_render				= false;
+		b shaders_on_default		= true;
+		b below_min_spec			= false;
+		b cpu_requirement			= true;
+		b shadows_on_default		= true;
+		b no_dest_alpha				= true;
+
+		[device*]
+		{
+			name					= "i700/i800 series";
+			device_ids				= 0x7800, 0x1240, 0x7121, 0x7123, 0x7125, 0x7127, 0x1132, 0x3577;
+			b simple_render			= true;
+			b below_min_spec		= true;
+			b shadows_on_default	= false;
+		}
+		[device*]
+		{
+			name					= "i800 series";
+			device_ids				= 0x2562, 0x3582, 0x2572;
+			b shaders_on_default	= false;
+			b shadows_on_default	= false;
+		}
+		[device*]
+		{
+			name					= "i915 series";
+			device_ids				= 0x2582, 0x2782, 0x2592, 0x2792;
+			b no_advanced_shaders	= true;
+		}
+		[device*]
+		{
+			name					= "i945 series";
+			device_ids				= 0x2772, 0x2776, 0x27a2, 0x27a6;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "VideoLogic";
+		vendor_ids					= 0x1033;
+
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "PowerVR series";
+			device_ids				= 0x0046, 0x0067;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "Trident";
+		vendor_ids					= 0x1023;
+
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "Blade series";
+			device_ids				= 0x2100, 0x2200, 0x8420, 0x8820, 0x9320, 0x9388, 0x9397, 0x939a, 0x9440,
+									  0x9520, 0x9525, 0x9540, 0x9660, 0x9750, 0x9754, 0x9850, 0x9880, 0x9910,
+									  0x9930;
+		}
+	}
+
+	[vendor*]
+	{
+		vendor						= "Number Nine";
+		vendor_ids					= 0x105d;
+
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "Revolution series";
+			device_ids				= 0x493d, 0x5348;
+		}
+	}
+	
+	[vendor*]
+	{
+		vendor						= "VIA";
+		vendor_ids					= 0x1106;
+
+		b simple_render				= true;
+		b shaders_on_default		= false;
+		b below_min_spec			= true;
+		b cpu_requirement			= false;
+		b shadows_on_default		= false;
+
+		[device*]
+		{
+			name					= "Integrated";
+			device_ids				= 0x3122, 0x7205;
+		}
+	}	
+}
