@@ -38,8 +38,8 @@
 			[800x600]	{ max_back_buffers = 2; }
 			[1024x768]	{ max_back_buffers = 2; }
 			[1280x1024]	{ max_back_buffers = 2; }
-			[1600x1200] { max_back_buffers = 2; }
-			[1920x1080] { max_back_buffers = 2; }
+			[1600x1200]     { max_back_buffers = 2; }
+			[1920x1080]     { max_back_buffers = 2; }
 			[2560×1440]     { max_back_buffers = 2; }
 		}
 	}
@@ -53,8 +53,8 @@
 			[800x600]	{ max_back_buffers = 2; }
 			[1024x768]	{ max_back_buffers = 2; }
 			[1280x1024]	{ max_back_buffers = 2; }
-			[1600x1200] { max_back_buffers = 2; }
-			[1920x1080] { max_back_buffers = 2; }
+			[1600x1200]     { max_back_buffers = 2; }
+			[1920x1080]     { max_back_buffers = 2; }
 			[2560×1440]     { max_back_buffers = 2; }
 		}
 	}
