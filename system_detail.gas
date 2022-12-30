@@ -11,6 +11,7 @@
 			[1024x768]	{ max_back_buffers = 2; }
 			[1280x1024]	{ max_back_buffers = 2; }
 			[1920x1080]	{ max_back_buffers = 2; }
+                        [2560×1440]     { max_back_buffers = 2; }
 		}
 	}
 	[32M16B]
@@ -24,6 +25,7 @@
 			[1024x768]	{ max_back_buffers = 2; }
 			[1280x1024]	{ max_back_buffers = 2; }
 			[1920x1080]	{ max_back_buffers = 2; }
+			[2560×1440]     { max_back_buffers = 2; }
 		}
 	}
 	[64M32B]
@@ -38,6 +40,7 @@
 			[1280x1024]	{ max_back_buffers = 2; }
 			[1600x1200] { max_back_buffers = 2; }
 			[1920x1080] { max_back_buffers = 2; }
+			[2560×1440]     { max_back_buffers = 2; }
 		}
 	}
 	[64M16B]
@@ -52,6 +55,7 @@
 			[1280x1024]	{ max_back_buffers = 2; }
 			[1600x1200] { max_back_buffers = 2; }
 			[1920x1080] { max_back_buffers = 2; }
+			[2560×1440]     { max_back_buffers = 2; }
 		}
 	}
 }
